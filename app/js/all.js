@@ -1,1 +1,0 @@
-$(".slider").slick({centerMode:!0,centerPadding:"0px",slidesToShow:3,slidesToScroll:1,dots:!0,focusOnSelect:!0});
