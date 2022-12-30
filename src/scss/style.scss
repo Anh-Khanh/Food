@@ -12,7 +12,7 @@
   margin-right: 57px;
 }
 .line {
-  border: 1px solid gray;
+  border-bottom: 1.5px solid #ccb301;
   margin-left: 14%;
   margin-right: 14%;
   margin-top: 20px;
@@ -44,13 +44,19 @@ header {
   .header_contact {
     display: flex;
     align-items: center;
-    p {
-      font-weight: 600;
-      text-align: end;
-      margin-right: 10px;
-      font-size: 1.2rem;
-      strong {
-        font-size: 3rem;
+    a {
+      align-items: center;
+      display: flex;
+
+      p {
+        font-weight: 600;
+        text-align: end;
+        font-size: 1.667rem;
+        line-height: 2.083rem;
+        strong {
+          font-size: 2.917rem;
+          line-height: 2.917rem;
+        }
       }
     }
     img {
@@ -61,14 +67,16 @@ header {
 
 /* MENU */
 .header_menu--list {
+  margin-top: 10px;
   display: flex;
   justify-content: flex-end;
+  column-gap: 50px;
   li {
     a {
       display: block;
       font-weight: bold;
-      font-size: 1.2rem;
-      padding: 20px 45px;
+      padding: 12px 0;
+      font-size: 1.667rem;
       cursor: pointer;
     }
   }
@@ -83,15 +91,15 @@ header {
     text-align: center;
     width: 50%;
     .text_hungry {
-      font-size: 5.7rem;
+      font-size: 5.768rem;
       font-family: "Gabriela";
     }
     .text_wait {
-      font-size: 9rem;
+      font-size: 9.021rem;
       font-family: "Fredericka the Great", cursive;
     }
     .text_letstart {
-      font-size: 2.7rem;
+      font-size: 2.662rem;
     }
     .text_mondayhappy {
       display: flex;
@@ -99,11 +107,11 @@ header {
       justify-content: center;
       .text_monday {
         width: 200px;
-        font-size: 2rem;
+        font-size: 1.939rem;
         font-family: "Fredericka the Great", cursive;
       }
       .text_number {
-        font-size: 5.7rem;
+        font-size: 5.679rem;
         font-family: "Fredericka the Great", cursive;
       }
     }
@@ -111,9 +119,9 @@ header {
       background: transparent;
       a {
         display: block;
-        width: 226px;
-        padding: 15px 0;
-        font-size: 2rem;
+        width: 227px;
+        padding: 13px 0;
+        font-size: 2.083rem;
         font-weight: 700;
         border: 2px solid black;
       }
@@ -158,6 +166,7 @@ header {
 #content {
   padding-top: 100px;
 }
+
 .chooseandenjoy {
   .title_choose {
     margin-left: 20%;
@@ -168,8 +177,8 @@ header {
       font-size: 5rem;
     }
     p {
-      font-size: 1.7rem;
-      line-height: 3rem;
+      font-size: 1.667rem;
+      line-height: 2.917rem;
     }
   }
 }
@@ -180,41 +189,44 @@ header {
   display: flex;
   justify-content: center;
   .session_slider {
-    // flex: 1;
-    width: 32%;
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
     img {
-      width: 100%;
+      object-fit: contain;
       height: 400px;
+      width: 100%;
     }
     h4 {
-      font-size: 2.1rem;
-      line-height: 3.7rem;
+      font-size: 2.083rem;
+      line-height: 3.75rem;
       font-weight: 700;
     }
     p {
-      font-size: 2.1rem;
-      line-height: 3.7rem;
+      font-size: 1.667rem;
+      line-height: 2.083rem;
       margin-left: 20px;
       margin-right: 20px;
     }
     button {
       margin-top: 37px;
       background: #ffe001;
-      width: 200px;
+      width: 195px;
 
       a {
         display: block;
         cursor: pointer;
         color: black;
         font-weight: 700;
-        padding: 30px 0;
-        font-size: 2rem;
+        height: 57px;
+        line-height: 57px;
+        text-align: center;
+        font-size: 1.667rem;
       }
     }
   }
@@ -229,24 +241,24 @@ header {
 }
 .spaghetti {
   position: absolute;
-  top: 80vh;
+  top: 50vh;
 }
 // slider
 
 .title_event {
   text-align: center;
   b {
-    font-size: 2.1rem;
-    line-height: 4.6rem;
+    font-size: 2.083rem;
+    line-height: 4.583rem;
   }
   h2 {
-    font-size: 4.2rem;
-    line-height: 4.5rem;
+    font-size: 4.167rem;
+    line-height: 4.583rem;
     font-family: "Fredericka the Great", cursive;
   }
   p {
     margin-top: 10px;
-    font-size: 1.7rem;
+    font-size: 1.667rem;
     line-height: 2.5rem;
     margin-right: 15%;
     margin-left: 15%;
@@ -285,7 +297,8 @@ header {
 .slick-slide {
   img {
     width: 100%;
-    height: 250px;
+    height: 200px;
+    object-fit: cover;
   }
 }
 // ----------------
@@ -347,11 +360,12 @@ header {
       color: #fff;
       top: 0;
       span {
+        font-weight: 700;
         font-size: 2.5rem;
-        line-height: 3.8rem;
+        line-height: 3.75rem;
       }
       h2 {
-        font-size: 4.2rem;
+        font-size: 4.167rem;
       }
     }
   }
@@ -374,11 +388,12 @@ header {
         width: 70%;
         height: 100%;
         span {
+          font-weight: 700;
           font-size: 2.5rem;
-          line-height: 3.8rem;
+          line-height: 3.75rem;
         }
         h2 {
-          font-size: 3.3rem;
+          font-size: 3.333rem;
         }
       }
     }
@@ -393,11 +408,12 @@ header {
         top: 0;
         padding: 40px;
         span {
+          font-weight: 700;
           font-size: 2.5rem;
-          line-height: 3.8rem;
+          line-height: 3.75rem;
         }
         h2 {
-          font-size: 3.4rem;
+          font-size: 3.333rem;
         }
       }
     }
@@ -407,12 +423,13 @@ header {
 // form
 .form_reservation {
   text-align: center;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin-right: 108px;
+  margin-left: 108px;
   margin-top: 100px;
   p {
-    font-size: 2rem;
-    line-height: 4.5rem;
+    font-weight: 600;
+    font-size: 2.083rem;
+    line-height: 4.583rem;
   }
   h2 {
     font-size: 5rem;
@@ -427,12 +444,14 @@ header {
   margin-right: -40px;
   margin-left: -40px;
   input {
+    border-radius: 5px;
     margin-right: 40px;
     margin-left: 40px;
     border: 1px solid gray;
     width: 379px;
     height: 65px;
     padding-left: 10px;
+    padding-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 2rem;
@@ -443,8 +462,9 @@ header {
   }
   input[type="submit"] {
     background: #ffe001;
-    font-size: 2rem;
+    font-size: 2.083rem;
     font-weight: 700;
+    cursor: pointer;
   }
 }
 // footer
@@ -458,12 +478,16 @@ footer {
   padding: 100px;
   color: #fff;
 }
+.footer_logo{
+    cursor: pointer;
+    display: block;
+}
 .footer_content {
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
   .footer_text {
-    font-size: 1.7rem;
+    font-size: 1.667rem;
     width: 45%;
     line-height: 2.5rem;
   }
@@ -476,17 +500,22 @@ footer {
       p {
         margin-left: 20px;
         line-height: 2.5rem;
-        font-size: 1.7rem;
+        font-size: 1.667rem;
       }
     }
     .email {
       display: flex;
       align-items: center;
       margin-top: 10px;
-      p {
-        margin-left: 20px;
-        line-height: 2.5rem;
-        font-size: 1.7rem;
+      a {
+        display: flex;
+        align-items: center;
+        p {
+          line-height: 2.5rem;
+          font-size: 1.667rem;
+          color: #fff;
+          margin-left: 20px;
+        }
       }
     }
   }
@@ -497,7 +526,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   span {
-    font-size: 1.7rem;
+    font-size: 1.667rem;
     line-height: 2.9rem;
   }
   .social {
@@ -532,7 +561,7 @@ footer {
     .leaf1 {
       position: absolute;
       top: -33px;
-      left: 23px;
+      left: 4px;
     }
     .pasta {
       position: absolute;
@@ -572,7 +601,7 @@ footer {
     .tomato {
       position: absolute;
       bottom: 0px;
-      left: 42%;
+      left: 45%;
     }
   }
 }
@@ -607,10 +636,8 @@ footer {
 @media screen and (max-width: 1136px) {
   .banner_food {
     .food_left {
-      height: 360px;
       img {
         height: 100%;
-        object-fit: fill;
       }
       .food_polular {
         span {
@@ -624,7 +651,6 @@ footer {
     }
     .food_right {
       .food_taste {
-        height: 175px;
         img {
           height: 100%;
         }
@@ -639,7 +665,6 @@ footer {
         }
       }
       .food_fresh {
-        height: 175px;
         img {
           height: 100%;
         }
@@ -658,16 +683,10 @@ footer {
 }
 @media screen and (max-width: 1250px) {
   #header {
-    padding-top: 10px;
+    padding-top: 20px;
   }
   .banner {
-    margin-top: 10px;
-  }
-  .form_reservation {
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-  .banner {
+    margin-top: 0;
     .banner_img {
       height: 65vh;
 
@@ -679,8 +698,11 @@ footer {
     .banner_content {
       .text_hungry {
         font-size: 4rem;
+        margin-bottom: 10px;
       }
       .text_wait {
+        margin-top: 10px;
+        margin-bottom: 10px;
         font-size: 7rem;
       }
       .text_mondayhappy {
@@ -694,11 +716,21 @@ footer {
           width: 200px;
           padding: 13px 0;
         }
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
   }
   .line {
     margin: 20px 14%;
+  }
+  .choose_img--slider {
+    .session_slider {
+      img {
+        height: 350px;
+      }
+    }
   }
 }
 @media screen and (max-width: 1160px) {
@@ -717,6 +749,12 @@ footer {
       }
     }
   }
+  .bg_line {
+    top: 120px;
+  }
+  .choose_img--slider {
+    top: -80px;
+  }
 }
 
 @media screen and (max-width: 1160px) {
@@ -731,7 +769,7 @@ footer {
     }
   }
   .header_menu--list {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -755,7 +793,7 @@ footer {
       }
       .btn_order {
         a {
-          padding: 20px 0;
+          padding: 15px 0;
         }
       }
     }
@@ -772,11 +810,14 @@ footer {
   .footer_contact {
     margin-top: 70px;
   }
-  .bg_line {
-    top: 120px;
-  }
+
   .choose_img--slider {
-    top: -90px;
+    top: -50px;
+    .session_slider {
+      img {
+        height: 300px;
+      }
+    }
   }
   .form {
     input {
@@ -795,18 +836,32 @@ footer {
   #footer {
     padding: 57px;
   }
-  .spaghetti {
-    img {
-      height: 200px;
-    }
+  .bg_line {
+    height: 100px;
   }
 }
+
 @media screen and (max-width: 876px) {
+  .choose_img--slider {
+    .session_slider {
+      margin-left: 0;
+      margin-right: 0;
+      img {
+        height: 250px;
+      }
+    }
+  }
+  .spaghetti {
+    top: 70vh;
+    img {
+      width: 150px;
+    }
+  }
   .banner {
     .banner_content {
       .btn_order {
         a {
-          padding: 15px 0;
+          padding: 13px 0;
         }
       }
       .text_wait {
@@ -815,7 +870,7 @@ footer {
       .text_mondayhappy {
         margin-bottom: 10px;
         .text_number {
-          font-size: 4rem;
+          font-size: 3rem;
         }
       }
     }
@@ -839,12 +894,37 @@ footer {
 }
 
 @media screen and (max-width: 850px) {
+.banner {
+  .banner_content{
+    width: 60%;
+  }
+  .banner_img{
+    width: auto;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+  #header {
+    padding-top: 20px;
+    .header_contact {
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        strong {
+          a {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+          }
+        }
+      }
+    }
+  }
   .banner_food {
     .food_left {
-      height: 300px;
       img {
         height: 100%;
-        object-fit: fill;
       }
       .food_polular {
         padding: 20px;
@@ -852,13 +932,11 @@ footer {
     }
     .food_right {
       .food_taste {
-        height: 145px;
         .taste {
           padding: 20px;
         }
       }
       .food_fresh {
-        height: 145px;
         .fresh {
           width: 80%;
           padding: 20px;
@@ -869,16 +947,41 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+  .banner {
+    .banner_content {
+      width: 70%;
+    }
+  }
   #header {
-    height: 40px;
+    .header_logo {
+      img {
+        height: 50px;
+        object-fit: contain;
+      }
+    }
+  }
+  .header_menu--list {
+    justify-content: center;
+    li {
+      a {
+        padding: 15px 0px;
+      }
+    }
+  }
+  .choose_img--slider {
+    .session_slider {
+      img {
+        height: auto;
+        width: 60%;
+      }
+    }
+  }
+  #header {
     .header_logo {
       height: 100%;
       a {
         height: 100%;
         display: block;
-        img {
-          height: 100%;
-        }
       }
     }
     .header_contact {
@@ -900,10 +1003,6 @@ footer {
       margin-right: 57px;
       margin-left: 57px;
       width: auto;
-      img {
-        width: 70%;
-        height: 300px;
-      }
     }
   }
   .bg_line {
@@ -918,42 +1017,47 @@ footer {
     top: 210px;
     width: 100%;
   }
+  .banner {
+    .banner_content {
+      .text_hungry {
+        font-size: 3rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .slick-slide {
-    img {
-      width: 100%;
-      height: 180px;
-    }
+ 
+  #header {
+    padding-top: 10px;
   }
   .header_menu--list {
-    justify-content: space-between;
-    margin-top: 10px;
-    height: 40px;
+    justify-content: center;
+    column-gap: 10;
     li {
       a {
         line-height: 40px;
-        padding: 15px 40px;
+        padding: 0;
       }
     }
   }
 
   .banner_food {
     flex-wrap: wrap;
+    margin-left: 57px;
+    margin-right: 57px;
     .food_left {
       width: 100%;
       margin-right: 0;
-      height: 200px;
       margin-bottom: 20px;
       .food_polular {
         padding: 20px;
       }
     }
     .food_right {
+      width: 100%;
       margin-left: 0;
       .food_taste {
-        height: 200px;
         margin-bottom: 10px;
         .taste {
           padding: 20px;
@@ -961,7 +1065,6 @@ footer {
       }
       .food_fresh {
         margin-top: 10px;
-        height: 200px;
         .fresh {
           padding: 20px;
         }
@@ -972,6 +1075,7 @@ footer {
     margin-right: 0;
     margin-left: 0;
     input {
+      width: 100%;
       margin: 5px 0;
     }
   }
@@ -987,21 +1091,11 @@ footer {
       width: 100%;
     }
   }
-  #header {
-    padding-top: 10px;
-  }
-  .header_menu--list {
-    li {
-      a {
-        padding: 10px 40px;
-      }
-    }
-  }
   .banner {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0px;
     .banner_img {
       height: 120px;
       text-align: center;
@@ -1015,11 +1109,16 @@ footer {
       .btn_order {
         a {
           padding: 10px 0;
-          width: 200px;
+          width: 170px;
         }
       }
       .text_hungry {
         font-size: 3rem;
+        margin-bottom: 0;
+      }
+      .text_wait{
+        margin-top: 0;
+        margin-bottom: 0;
       }
     }
   }
@@ -1079,6 +1178,19 @@ footer {
       width: 100%;
     }
   }
+  #header {
+    .header_contact {
+      a {
+        p {
+          font-size: 1rem;
+          strong {
+            font-size: 2rem;
+            line-height: 2rem;
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 666px) {
   #header {
@@ -1086,14 +1198,15 @@ footer {
       p {
         font-size: 1rem;
         strong {
-          font-size: 2rem;
+          a {
+            font-size: 2rem;
+          }
         }
       }
     }
   }
   .header_menu--list {
     li {
-      flex: 1;
       a {
         width: 100%;
         height: 100%;
@@ -1106,24 +1219,30 @@ footer {
 
 @media screen and (max-width: 588px) {
   .header_menu--list {
-    justify-content: start;
+    justify-content: center;
+    column-gap: 10px;
     li {
       flex: none;
-      padding: 0px 10px;
+      a {
+        padding: 0px 10px;
+        font-size: 1.5rem;
+      }
     }
   }
 
   #header {
-    // flex-direction: column;
     .header_logo {
-      height: 40px;
+      img {
+        height: 40px;
+      }
     }
     .header_contact {
-      // margin-top: 5px;
       p {
         font-size: 1rem;
         strong {
-          font-size: 2rem;
+          a {
+            font-size: 2rem;
+          }
         }
       }
       img {
@@ -1144,7 +1263,7 @@ footer {
       top: 0px;
       left: 50px;
       img {
-        width: 40px;
+        width: 70px;
       }
     }
     .pasta {
@@ -1152,7 +1271,7 @@ footer {
       top: 50px;
       right: 5%;
       img {
-        width: 40px;
+        width: 70px;
       }
     }
     .leaf {
@@ -1160,7 +1279,7 @@ footer {
       right: 0px;
       bottom: -20px;
       img {
-        width: 40px;
+        width: 70px;
       }
     }
     .tomato {
@@ -1168,7 +1287,7 @@ footer {
       bottom: 20px;
       left: 0px;
       img {
-        width: 40px;
+        width: 70px;
       }
     }
   }
@@ -1209,16 +1328,28 @@ footer {
       p {
         line-height: 2.7rem;
       }
-      button {
-        a {
-          padding: 15px 0;
-        }
-      }
     }
   }
   .bg {
     height: 100px;
     top: 160px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .wrap {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .banner_food {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .form_reservation {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #footer {
+    padding: 20px;
   }
 }
 @media screen and (max-width: 463px) {
@@ -1259,33 +1390,26 @@ footer {
       }
     }
   }
-  .choose_img--slider {
-    .session_slider {
-      img {
-        height: 250px;
-      }
-    }
-  }
+
   #header {
-    .header_logo {
-      height: 30px;
-    }
     .header_contact {
-      height: 30px;
       img {
         height: 30px;
       }
       p {
         strong {
-          font-size: 1.5rem;
+          a {
+            font-size: 1.5rem;
+            line-height: normal;
+          }
         }
       }
     }
   }
   .spaghetti {
-    top: 90vh;
+    top: 80vh;
     img {
-      height: 100px;
+      width: 100px;
     }
   }
   .wrap {
@@ -1331,9 +1455,11 @@ footer {
         }
       }
       .email {
-        p {
-          font-size: 1.5rem;
-          line-height: 2rem;
+        a {
+          p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+          }
         }
       }
     }
@@ -1347,6 +1473,87 @@ footer {
   .title_event {
     h2 {
       font-size: 3rem;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .bg{
+    height: 80px;
+    top: 120px;
+  }
+
+  .header_menu--list {
+    li {
+      a {
+        padding: 0;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  #header {
+    .header_contact {
+      a {
+        p {
+          font-size: 0.7rem;
+          strong {
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  .header_img {
+    .leaf1 {
+      left: 0;
+      img {
+        width: 50px;
+      }
+    }
+    .pasta {
+      img {
+        width: 50px;
+      }
+    }
+    .leaf {
+      img {
+        width: 50px;
+      }
+    }
+    .tomato {
+      img {
+        width: 50px;
+      }
+    }
+  }
+  .footer_content {
+    margin-top: 20px;
+    .footer_text{
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+    .contact {
+      .location {
+        p {
+          font-size: 1.2rem;
+          line-height: 1.7rem;
+        }
+      }
+      .email {
+        a {
+          p {
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+          }
+        }
+      }
+    }
+  }
+  .footer_contact{
+    margin-top: 20px;
+    span{
+      font-size: 1.2rem;
+      line-height: 2rem;
     }
   }
 }
