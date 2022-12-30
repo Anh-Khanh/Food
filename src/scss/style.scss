@@ -124,6 +124,9 @@ header {
         font-size: 2.083rem;
         font-weight: 700;
         border: 2px solid black;
+        &:hover {
+          background: rgba(243, 235, 235, 0.2);
+        }
       }
     }
   }
@@ -227,6 +230,9 @@ header {
         line-height: 57px;
         text-align: center;
         font-size: 1.667rem;
+        &:hover {
+          background: rgba(243, 235, 235, 0.2);
+        }
       }
     }
   }
@@ -465,6 +471,9 @@ header {
     font-size: 2.083rem;
     font-weight: 700;
     cursor: pointer;
+    &:hover {
+      background: rgba(#ffe001, 0.7);
+    }
   }
 }
 // footer
@@ -478,9 +487,9 @@ footer {
   padding: 100px;
   color: #fff;
 }
-.footer_logo{
-    cursor: pointer;
-    display: block;
+.footer_logo {
+  cursor: pointer;
+  display: block;
 }
 .footer_content {
   margin-top: 100px;
@@ -716,9 +725,6 @@ footer {
           width: 200px;
           padding: 13px 0;
         }
-        &:hover {
-          opacity: 0.5;
-        }
       }
     }
   }
@@ -894,17 +900,17 @@ footer {
 }
 
 @media screen and (max-width: 850px) {
-.banner {
-  .banner_content{
-    width: 60%;
-  }
-  .banner_img{
-    width: auto;
-    img{
-      width: 100%;
+  .banner {
+    .banner_content {
+      width: 60%;
+    }
+    .banner_img {
+      width: auto;
+      img {
+        width: 100%;
+      }
     }
   }
-}
 
   #header {
     padding-top: 20px;
@@ -1027,7 +1033,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
- 
   #header {
     padding-top: 10px;
   }
@@ -1116,7 +1121,7 @@ footer {
         font-size: 3rem;
         margin-bottom: 0;
       }
-      .text_wait{
+      .text_wait {
         margin-top: 0;
         margin-bottom: 0;
       }
@@ -1477,7 +1482,7 @@ footer {
   }
 }
 @media screen and (max-width: 400px) {
-  .bg{
+  .bg {
     height: 80px;
     top: 120px;
   }
@@ -1528,7 +1533,7 @@ footer {
   }
   .footer_content {
     margin-top: 20px;
-    .footer_text{
+    .footer_text {
       font-size: 1.2rem;
       line-height: 2rem;
     }
@@ -1549,9 +1554,9 @@ footer {
       }
     }
   }
-  .footer_contact{
+  .footer_contact {
     margin-top: 20px;
-    span{
+    span {
       font-size: 1.2rem;
       line-height: 2rem;
     }
