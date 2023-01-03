@@ -77,8 +77,8 @@ header {
       padding: 10px 20px;
       font-size: 1.667rem;
       cursor: pointer;
-      &:hover{
-          background: rgba(#ccb301, 0.5);
+      &:hover {
+        background: rgba(#ccb301, 0.5);
       }
     }
   }
@@ -127,7 +127,7 @@ header {
         font-weight: 700;
         border: 2px solid black;
         &:hover {
-          background: rgba(243, 235, 235, 0.2);
+          background: rgba(243, 235, 235, 0.4);
         }
       }
     }
@@ -233,7 +233,7 @@ header {
         text-align: center;
         font-size: 1.667rem;
         &:hover {
-          background: rgba(243, 235, 235, 0.2);
+          background: rgba(243, 235, 235, 0.5);
         }
       }
     }
@@ -273,6 +273,9 @@ header {
   }
 }
 // -------------------
+.slick-dots li button:before{
+  font-size: 15px !important;
+}
 .slick-next {
   display: none !important;
 }
@@ -306,6 +309,7 @@ header {
   img {
     width: 100%;
     height: 200px;
+    cursor: pointer;
     object-fit: cover;
   }
 }
@@ -368,7 +372,7 @@ header {
       color: #fff;
       top: 0;
       span {
-        font-weight: 700;
+        font-weight: 500;
         font-size: 2.5rem;
         line-height: 3.75rem;
       }
@@ -396,7 +400,7 @@ header {
         width: 70%;
         height: 100%;
         span {
-          font-weight: 700;
+          font-weight: 500;
           font-size: 2.5rem;
           line-height: 3.75rem;
         }
@@ -416,7 +420,7 @@ header {
         top: 0;
         padding: 40px;
         span {
-          font-weight: 700;
+          font-weight: 500;
           font-size: 2.5rem;
           line-height: 3.75rem;
         }
@@ -567,7 +571,34 @@ footer {
   }
 }
 
-// anima
+input[type="date"],
+input[type="time"] {
+  position: relative;
+}
+input[type="date"]:after {
+  font-family: FontAwesome;
+  content: "\f073";
+  color: #555;
+  padding: 0 5px;
+}
+input[type="time"]:after {
+  font-family: FontAwesome;
+  content: "\f017";
+  color: #555;
+  padding: 0 5px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
 
 // reponse
 
@@ -655,6 +686,7 @@ footer {
         height: 100%;
       }
       .food_polular {
+        padding: 20px;
         span {
           font-size: 2rem;
           line-height: 2.8rem;
@@ -670,6 +702,8 @@ footer {
           height: 100%;
         }
         .taste {
+          padding: 20px;
+
           span {
             font-size: 2rem;
             line-height: 2.8rem;
@@ -684,6 +718,8 @@ footer {
           height: 100%;
         }
         .fresh {
+          padding: 20px;
+
           span {
             font-size: 2rem;
             line-height: 2.8rem;
@@ -813,6 +849,9 @@ footer {
   .line {
     margin: 10px 14%;
   }
+  footer {
+    margin-top: 70px;
+  }
   #footer {
     padding: 70px;
   }
@@ -840,6 +879,8 @@ footer {
 @media screen and (max-width: 994px) {
   .banner_food {
     margin-top: 57px;
+    margin-right: 57px;
+    margin-left: 57px;
   }
   .form_reservation {
     margin-right: 57px;
@@ -938,26 +979,25 @@ footer {
       img {
         height: 100%;
       }
-      .food_polular {
-        padding: 20px;
-      }
     }
     .food_right {
       .food_taste {
         .taste {
-          padding: 20px;
+          width: 80%;
+          span {
+            line-height: 0.8;
+          }
         }
       }
       .food_fresh {
         .fresh {
           width: 80%;
-          padding: 20px;
         }
       }
     }
   }
-  .header_img{
-    .pasta{
+  .header_img {
+    .pasta {
       top: 0;
       right: -45px;
     }
@@ -1040,8 +1080,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
-.header_top {
+  .header_top {
     .header__menuList {
       display: none;
       position: fixed;
@@ -1076,8 +1115,8 @@ footer {
           a {
             cursor: pointer;
             padding: 0px 60px;
-            &:hover{
-              background: rgba(#ccb301,0.5);
+            &:hover {
+              background: rgba(#ccb301, 0.5);
             }
           }
         }
@@ -1088,14 +1127,14 @@ footer {
   .close,
   .icon_menu {
     display: flex;
-    
+
     cursor: pointer;
-    i{
-       font-size: 4rem;
+    i {
+      font-size: 4rem;
       font-weight: 700;
     }
   }
-  .icon_menu{
+  .icon_menu {
     justify-content: end;
     margin-top: 10px;
   }
@@ -1266,7 +1305,16 @@ footer {
       }
     }
   }
+  .form_reservation {
+    h2 {
+      margin-bottom: 57px;
+    }
+  }
+  footer {
+    margin-top: 57px;
+  }
 }
+
 @media screen and (max-width: 666px) {
   #header {
     .header_contact {
@@ -1379,7 +1427,7 @@ footer {
   .form_reservation {
     margin-top: 57px;
     h2 {
-      font-size: 4rem;
+      font-size: 3.2rem;
       margin-bottom: 57px;
     }
   }
