@@ -1,3 +1,5 @@
+
+
 $(".slider").slick({
   centerMode: true,
   centerPadding: "0px",
