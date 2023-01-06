@@ -82,7 +82,9 @@ header {
     }
   }
 }
-
+.slider_event{
+  margin-top: 100px;
+}
 .banner {
   height: calc(100vh - 160px);
   margin-top: 20px;
@@ -169,7 +171,7 @@ header {
 
 // content
 #content {
-  padding-top: 100px;
+  margin-top: 100px;
 }
 
 .chooseandenjoy {
@@ -189,8 +191,8 @@ header {
 }
 .choose_img--slider {
   position: relative;
+  margin-top: 30px;
   z-index: 2;
-  top: -40px;
   display: flex;
   justify-content: space-evenly;
   .session_slider {
@@ -204,8 +206,6 @@ header {
     justify-content: space-between;
     img {
       object-fit: contain;
-      height: 400px;
-      width: 100%;
     }
     h4 {
       font-size: 2.083rem;
@@ -238,11 +238,11 @@ header {
   }
 }
 .bg_line {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  z-index: -1;
   background: #e7e5a8;
   height: 140px;
-  top: 185px;
+  top: 70px;
   width: 100%;
 }
 .spaghetti {
@@ -447,7 +447,7 @@ header {
   h2 {
     font-size: 5rem;
     font-family: "Fredericka the Great", cursive;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
   }
 }
 .close,
@@ -792,7 +792,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .choose_img--slider {
     .session_slider {
       img {
-        height: 350px;
+        width: 90%;
       }
     }
   }
@@ -825,12 +825,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
         }
       }
     }
-  }
-  .bg_line {
-    top: 120px;
-  }
-  .choose_img--slider {
-    top: -80px;
   }
 }
 
@@ -904,10 +898,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 
   .choose_img--slider {
-    top: -50px;
     .session_slider {
       img {
-        height: 300px;
+        width: 100%;
       }
     }
   }
@@ -920,6 +913,17 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 }
 @media screen and (max-width: 994px) {
+  .form_reservation{
+    h2{
+      margin-bottom: 57px;
+    }
+  }
+  #content{
+    margin-top: 57px;
+  }
+  .slider_event{
+    margin-top: 57px;
+  }
   .banner{
     .banner_content{
       .text_wait{
@@ -944,6 +948,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
   .bg_line {
     height: 100px;
+  }
+  .footer_contact{
+    margin-top: 57px;
+  }
+  .footer_content{
+    margin-top: 57px;
   }
 }
 
@@ -1070,7 +1080,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     .session_slider {
       img {
         height: auto;
-        width: 60%;
+        width: 70%;
       }
     }
   }
@@ -1090,7 +1100,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
   .choose_img--slider {
     flex-wrap: wrap;
+    margin-top: 0;
     .session_slider {
+      position: relative;
+      margin-top: 40px;
       z-index: 10;
       margin-right: 57px;
       margin-left: 57px;
@@ -1102,12 +1115,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
   .bg {
     display: block;
-    position: relative;
-    z-index: 0;
+    position: absolute;
+    z-index: -1;
     background: #e7e5a8;
     height: 120px;
-    top: 210px;
-    width: 100%;
+    top: 130px;
+    width: 100vw;
   }
   .banner {
     .banner_content {
@@ -1371,7 +1384,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
   }
   #content{
-    padding-top: 57px;
+    margin-top: 57px;
   }
 }
 
@@ -1472,7 +1485,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 }
 @media screen and (max-width: 630px) {
-
+.bg{
+    top: 90px;
+  }
   .chooseandenjoy {
     .title_choose {
       margin-right: 57px;
@@ -1501,6 +1516,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 @media screen and (max-width: 580px) {
+
   .form {
     input {
       width: 100%;
@@ -1514,6 +1530,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
   .choose_img--slider {
     .session_slider {
+      margin-right: 20px;
+      margin-left: 20px;
       p {
         line-height: 2.7rem;
       }
@@ -1521,10 +1539,16 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
   .bg {
     height: 100px;
-    top: 160px;
   }
 }
 @media screen and (max-width: 580px) {
+  .choose_img--slider{
+    .session_slider{
+      img{
+        width: 80%;
+      }
+    }
+  }
   .banner{
     .banner_content{
       .btn_order{
@@ -1555,9 +1579,22 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .form_reservation {
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 40px;
+    h2{
+      margin-bottom: 40px;
+    }
+  }
+  .slider_event{
+    margin-top: 40px;
   }
   #footer {
     padding: 20px;
+  }
+  footer{
+    margin-top: 40px;
+  }
+  .bg{
+    top: 100px;
   }
 }
 @media screen and (max-width: 463px) {
@@ -1688,9 +1725,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 }
 @media screen and (max-width: 400px) {
+
   .bg {
     height: 80px;
-    top: 120px;
+    top: 70px;
   }
 
   .header_menu--list {
