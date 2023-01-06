@@ -159,12 +159,12 @@ header {
   }
   .leaf {
     position: absolute;
-    bottom: 0px;
-    right: 100px;
+    bottom: 50px;
+    right: 50px;
   }
   .tomato {
     position: absolute;
-    bottom: 0px;
+    bottom: 50px;
     left: 647px;
   }
 }
@@ -176,6 +176,7 @@ header {
 
 .chooseandenjoy {
   .title_choose {
+    margin-top: 10px;
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
@@ -271,7 +272,9 @@ header {
   }
 }
 // -------------------
-
+.slick-dots{
+  position: static !important;
+}
 .slick-dots li button:before{
   font-size: 15px !important;
 }
@@ -598,22 +601,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 // reponse
-// @media screen and (max-width: 1458px) {
-//   .banner{
-//     .banner_img{
-//       img{
-//         max-width: 670px;
-//       }
-//     }
-//   }
-// }
+
 @media screen and (max-width: 1358px) {
-  .banner{
-    .banner_img{
-      img{
-      }
-    }
-  }
+
   .header_img {
     .leaf1 {
       position: absolute;
@@ -627,7 +617,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
     .leaf {
       position: absolute;
-      bottom: 0px;
+      bottom: 28px;
       right: 0px;
     }
     .tomato {
@@ -831,6 +821,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 
 @media screen and (max-width: 1050px) {
+  .slider_event{
+    margin-top: 57px;
+  }
    .header_img {
     .leaf1 {
       position: absolute;
@@ -942,9 +935,13 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .form_reservation {
     margin-right: 57px;
     margin-left: 57px;
+    margin-top: 57px;
   }
   #footer {
     padding: 57px;
+  }
+  footer{
+    margin-top: 57px;
   }
   .bg_line {
     height: 100px;
@@ -1005,7 +1002,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
         font-size: 4rem;
       }
       p {
-        line-height: 2.4rem;
+        line-height: 2.5rem;
       }
     }
   }
