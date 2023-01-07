@@ -87,7 +87,7 @@ header {
 }
 .banner {
   height: calc(100vh - 160px);
-  margin-top: 20px;
+  margin-top: 50px;
   position: relative;
   display: flex;
   .banner_content {
@@ -206,6 +206,7 @@ header {
     align-items: center;
     justify-content: space-between;
     img {
+      width: 100%;
       object-fit: contain;
     }
     h4 {
@@ -363,6 +364,7 @@ header {
   margin-left: 108px;
   .food_left {
     margin-right: 15px;
+    flex: 1;
     position: relative;
     img {
       width: 100%;
@@ -388,6 +390,7 @@ header {
   .food_right {
     margin-left: 15px;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
     img {
