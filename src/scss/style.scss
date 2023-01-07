@@ -360,12 +360,12 @@ header {
 .banner_food {
   margin-top: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-right: 108px;
   margin-left: 108px;
   .food_left {
+    width: 47%;
     margin-right: 15px;
-    flex: 1;
     position: relative;
     img {
       width: 100%;
@@ -390,8 +390,8 @@ header {
   }
   .food_right {
     margin-left: 15px;
+    width: 47%;
     display: flex;
-    flex: 1;
     flex-direction: column;
     justify-content: space-between;
     img {
@@ -573,35 +573,6 @@ footer {
       }
     }
   }
-}
-
-input[type="date"],
-input[type="time"] {
-  position: relative;
-}
-input[type="date"]:after {
-  font-family: FontAwesome;
-  content: "\f073";
-  color: #555;
-  padding: 0 5px;
-}
-input[type="time"]:after {
-  font-family: FontAwesome;
-  content: "\f017";
-  color: #555;
-  padding: 0 5px;
-}
-input[type="date"]::-webkit-calendar-picker-indicator,
-input[type="time"]::-webkit-calendar-picker-indicator {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: auto;
-  height: auto;
-  color: transparent;
-  background: transparent;
 }
 
 // reponse
@@ -791,6 +762,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
   }
 }
+
 @media screen and (max-width: 1160px) {
    .banner {
     .banner_content {
